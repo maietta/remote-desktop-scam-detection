@@ -116,7 +116,7 @@ func trigger() {
 	notification := toast.Notification{
 		AppID:   "Scam Detection Monitor",
 		Title:   "Possible Scam in Progress!",
-		Message: "If you are seeing this after being receiving a call, it appears you may be a victim of a scam. Please hang up and call the company directly to verify the legitimacy of the call.",
+		Message: "If you are seeing this after being receiving a call, it appears you may be a victim of a scam. The remote settion has been terminated out of an abundance of caution. Please hang up and call the company directly to verify the legitimacy of the call.",
 	}
 	err := notification.Push()
 	if err != nil {
