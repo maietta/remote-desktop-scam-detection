@@ -1,0 +1,8 @@
+bank
+banking
+account
+savings
+checking
+portal
+loan
+loans
