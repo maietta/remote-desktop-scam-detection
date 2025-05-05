@@ -2,6 +2,21 @@
 
 A Windows-based security application designed to detect and prevent potential remote desktop scam attempts by monitoring browser activity and common remote desktop applications.
 
+## Project Status and Future Potential
+
+This project serves as a proof of concept demonstrating how remote desktop security can be enhanced to protect users from potential scams. The core functionality could be integrated directly into popular remote desktop solutions such as:
+- RustDesk
+- TeamViewer
+- AnyDesk
+- Other remote desktop applications
+
+While currently Windows-focused, the underlying concepts and detection mechanisms could be adapted for:
+- macOS (using similar system API calls)
+- Linux (using X11/Wayland window management APIs)
+- Other operating systems
+
+Such integration would provide native protection against common remote access scam techniques across all major platforms.
+
 ## Overview
 
 This application actively monitors your system for:
@@ -68,7 +83,6 @@ Edit the `wordlist.txt` file to add or remove keywords. Each keyword should be o
 
 ## Security Considerations
 
-- The application requires administrator privileges to terminate processes
 - It only monitors for specific remote desktop applications
 - The wordlist can be customized to match your specific needs
 - The application runs locally and doesn't send any data externally
